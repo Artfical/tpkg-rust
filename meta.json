@@ -1,0 +1,28 @@
+{
+ "name": "rust",
+ "version": "1.99.1",
+ "license": "MIT OR Apache-2.0",
+ "homepage": "https://www.rust-lang.org",
+ "licenses": [
+  "LICENSE-MIT",
+  "LICENSE-APACHE",
+  "COPYRIGHT",
+  "NOTICE.txt"
+ ],
+ "sources": [],
+ "desc": "Rust 1.99.1: rustc, cargo, rustdoc and the standard library",
+ "file": "rust-1.99.1.tpkg",
+ "size": 205696491,
+ "sha256": "cbb4af399b516b7a069a89a59abfedd7b98af11313055d214520e5911d15016d",
+ "unpacked": 601871786,
+ "min_build": 620,
+ "depends": [
+  "gcc",
+  "ca-certificates"
+ ],
+ "commands": {
+  "rustc": "bin/rustc-tos",
+  "cargo": "bin/cargo-tos",
+  "rustdoc": "bin/rustdoc"
+ }
+}

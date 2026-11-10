@@ -1,0 +1,13 @@
+Rust 1.99.1 for tOS
+====================
+
+The official x86_64-unknown-linux-gnu release from https://static.rust-lang.org/dist/2026-10-15/ : the rustc, cargo and rust-std
+components, unmodified, without the documentation, man pages and debugger scripts (to save space).
+It needs the gcc package: rustc links programs with `cc`.
+
+License: MIT or Apache-2.0 (LICENSE-MIT, LICENSE-APACHE, COPYRIGHT). It includes LLVM (Apache-2.0 with LLVM exceptions).
+Source: https://github.com/rust-lang/rust (tag 1.99.1).
+
+lib/libz.so.1 is zlib 1.2.13 from the zlib package (libLLVM needs it and is found next to it).
+
+Added for tOS: bin/rustc-tos and bin/cargo-tos (the commands `rustc` and `cargo`): they name the gcc package's compiler by its full path as the linker, and give cargo the CA bundle.
